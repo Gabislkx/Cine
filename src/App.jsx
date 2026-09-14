@@ -5,13 +5,12 @@ import "./Filme.css";
 
 export default function App() {
   return (
-    <div className="barra">
     <BrowserRouter>
-      <Routes>
-        <Route path="/CardFilme" element={<CardFilme/>} />
-        <Route path="/premium" element={<Premium/>} />
-      </Routes>
+        <Routes>
+          <Route path="/" element={<Navigate to="/CardFilme" replace />} />
+          <Route path="/CardFilme" element={<CardFilme />} />
+          <Route path="/premium" element={<Premium />} />
+        </Routes>
     </BrowserRouter>
-    </div>
   );
 }

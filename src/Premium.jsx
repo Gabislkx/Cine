@@ -11,13 +11,12 @@ export default function Premium() {
         <h1>
           CINEWOODY <GiFilmSpool />
         </h1>
-        <button className='center'> <Link to="/CardFilme" className='link'>
-            Home
-          </Link>
-          </button> 
-        
-          <button> <Link to="/premium" className="link">Premium</Link></button> 
-        
+        <div className='bordas'>
+           <Link to="/CardFilme" className='link'> Home</Link>
+        </div>
+        <div className='bordas'>
+           <Link to="/premium" className="link">Premium</Link>
+        </div>
             <input 
           type="text"  className='pesquisa'
           placeholder="pesquise seu filme"

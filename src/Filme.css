@@ -119,3 +119,35 @@ select{
   color: white;
 }
 
+.bordas{
+  border: #420405 solid 3px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.bordas:hover{
+  border: #a51b1e solid 3px;
+}
+
+.nota{
+border: #fa0202b7 solid 2px;
+border-radius: 20px;
+padding: 5PX;
+margin-right: auto;
+}
+
+.griddois{
+    display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  padding: 20px;
+}
+
+.texto{
+  text-align: justify;
+}
+
+.sinopse{
+  color: white;
+  font-size: 17px;
+}
