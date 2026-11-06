@@ -9,7 +9,7 @@ export default function Premium() {
     <div> 
         <div className='cabecalho'>
         <h1>
-          CINEWOODY <GiFilmSpool />
+          CINE CLUB
         </h1>
         <div className='bordas'>
            <Link to="/CardFilme" className='link'> Home</Link>
@@ -18,10 +18,9 @@ export default function Premium() {
            <Link to="/premium" className="link">Premium</Link>
         </div>
             <input 
-          type="text"  className='pesquisa'
+          type="text"  className='pesquisabarra'
           placeholder="pesquise seu filme"
         />
-  
         </div>
         <h2>Area Premuim</h2>
         <div className='grid'>
@@ -35,7 +34,7 @@ export default function Premium() {
         </div>
         
         <div className=' card borda'>
-          <h2>Pro++</h2>
+          <h2>Pro Max</h2>
           <p><FaCheck />  Sem anuncios</p>
           <p><FaCheck />  sem restição</p>
           <h4>R$ 24,90</h4>
@@ -44,7 +43,7 @@ export default function Premium() {
         
         <div  className=' card borda'>
         
-          <h2>Pro+</h2>
+          <h2>Pro Plus</h2>
           <p><FaCheck />  Sem anuncios</p>
           <p><CgClose />  Com Restrições</p>
           <h4>R$ 9,99</h4>

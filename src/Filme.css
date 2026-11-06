@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(90deg, #660708 0%, #000000 50%, #000000 100%);
+  background: #0B0E1B;
   color: #ffffff;
   margin: 0;
 }
@@ -9,13 +9,12 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 1.2rem 2rem;
-  background: linear-gradient(145deg, #420405 0%, #0d0d0d 60%, #000000 100%);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
+  background: #072246;
+  border-top: 1px solid rgba(15, 3, 3, 0.288);
+  border-radius: 4px;
   box-shadow: 
     0 10px 25px -5px rgba(0, 0, 0, 0.8),
-    0 4px 10px rgba(102, 7, 8, 0.3),
+    0 4px 10px rgba(215, 215, 241, 0.3),
     inset 0 1px 1px rgba(255, 255, 255, 0.15);
 }
 
@@ -36,7 +35,7 @@ h2 {
 
 
  .card {
-  background-color: #000001;
+  background-color: #14243A;
   border: 1px solid rgba(20, 19, 19, 0.089);
   border-radius: 20px;
   padding: 6px;
@@ -47,13 +46,26 @@ h2 {
   text-align: center;
   width: 300px;
 }
-
-
+.card h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 8px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 2.7em; 
+}
 img {
-  border-radius: 12px;
-  max-width: 300px;
-  height: auto;
+ width: 90%;
+  height: 300px;
+  object-fit: cover; 
+  border-radius: 8px;
+  margin: 10px 0;
   display: block;
+ margin: 15px;
 }
 
 
@@ -64,16 +76,22 @@ img {
 }
 
 .pesquisa{
-  border-radius: 10px;
-  width: 200px;
-  padding: 4px;
-  border: #00000000;
+  border-radius: 20px;
+  width: 250px;
+  padding: 14px;
+  border: #011142 solid 2px;
   align-items: flex-end;
 }
-
+.pesquisabarra{
+  border-radius: 20px;
+  width: 250px;
+  padding: 14px;
+  border: #011142 solid 2px;
+  align-items: flex-end;
+}
 footer{
   padding: 2rem;
-  background-color: #000000;
+   background: #072246;
   color: white;
 
 }
@@ -98,11 +116,11 @@ button:hover{
 }
 
 .borda{
-  border: #660708 solid 2px;
+  border: #011142 solid 2px;
 }
 
 .borda:hover{
-    border: #a51b1e solid 2px;
+    border: #023BE6 solid 2px;
 }
 
 .center{
@@ -110,7 +128,7 @@ align-items: center;
 }
 .link{
   text-decoration: none;
-  color: #ffffff;
+  color: #fffffe;
 }
 
 select{
@@ -120,20 +138,23 @@ select{
 }
 
 .bordas{
-  border: #420405 solid 3px;
+  border: #011142 solid 3px;
   padding: 10px;
   border-radius: 20px;
 }
 
 .bordas:hover{
-  border: #a51b1e solid 3px;
+  border: #023BE6 solid 3px;
 }
 
 .nota{
-border: #fa0202b7 solid 2px;
-border-radius: 20px;
-padding: 5PX;
-margin-right: auto;
+padding: 10PX;
+margin-right: 200px;
+font-weight: bold;
+background-color: rgba(0, 0, 0, 0.425);
+  backdrop-filter: blur(4px);
+  color: #ffc107;
+border-radius: 15px;
 }
 
 .griddois{
@@ -150,4 +171,25 @@ margin-right: auto;
 .sinopse{
   color: white;
   font-size: 17px;
+}
+.salvo{
+padding: 10PX;
+margin-right: 8px;
+display: flex; 
+font-weight: bold;
+background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 24px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 50%;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+.salvo:hover {
+  transform: scale(1.15);
+  background-color: rgba(255, 255, 255, 0.1);
 }
