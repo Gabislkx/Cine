@@ -27,7 +27,7 @@ Siga os passos abaixo no terminal para rodar o projeto localmente:
 
 2. **Entrar na pasta do projeto:**
    ```bash
-   cd Rede-social
+   cd Cine
    ```
 
 3. **Instalar as dependências:**
